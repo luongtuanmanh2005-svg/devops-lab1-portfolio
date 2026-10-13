@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu - Portfolio</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,53 +19,103 @@
             color: #333;
         }
 
-```
-    nav {
-        background: #222;
-        padding: 15px;
-        text-align: center;
-    }
+        /* Thanh điều hướng */
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
 
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-    }
+        /* Chữ trên thanh điều hướng màu đen */
+        nav a,
+        nav a:link,
+        nav a:visited {
+            color: #000000 !important;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
 
-    main {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 25px;
-        background: white;
-        border-radius: 10px;
-    }
-</style>
-```
+        nav a:hover {
+            color: #667eea !important;
+            text-decoration: underline;
+        }
 
+        /* Nội dung chính */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            line-height: 1.7;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #222222;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        /* Giao diện điện thoại */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            main {
+                margin: 20px 12px;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Thanh điều hướng -->
     <nav>
         <a href="index.html">Trang chủ</a>
         <a href="about.html">Giới thiệu</a>
         <a href="contact.html">Liên hệ</a>
     </nav>
 
-```
-<main>
-    <h1>Giới thiệu bản thân</h1>
-    <p>Xin chào! Tôi là Lương Tuấn Mạnh.</p>
-    <p>Tôi là sinh viên ngành Công nghệ thông tin, đang tìm hiểu
-    về phát triển phần mềm, Git, GitHub và DevOps.</p>
+    <!-- Nội dung giới thiệu -->
+    <main>
+        <h1>Giới thiệu bản thân</h1>
 
-    <h2>Mục tiêu học tập</h2>
-    <ul>
-        <li>Nắm vững quy trình quản lý mã nguồn với Git.</li>
-        <li>Thực hành tự động hóa bằng GitHub Actions.</li>
-        <li>Triển khai website tĩnh bằng GitHub Pages.</li>
-        <li>Tìm hiểu kiểm thử chất lượng website với Lighthouse CI.</li>
-    </ul>
-</main>
-```
+        <p>Xin chào! Tôi là Lương Tuấn Mạnh.</p>
+
+        <p>
+            Tôi là sinh viên ngành Công nghệ thông tin, đang tìm hiểu
+            về phát triển phần mềm, Git, GitHub và DevOps.
+        </p>
+
+        <h2>Mục tiêu học tập</h2>
+
+        <ul>
+            <li>Nắm vững quy trình quản lý mã nguồn với Git.</li>
+            <li>Thực hành tự động hóa bằng GitHub Actions.</li>
+            <li>Triển khai website tĩnh bằng GitHub Pages.</li>
+            <li>Tìm hiểu kiểm thử chất lượng website với Lighthouse CI.</li>
+        </ul>
+    </main>
 
 </body>
 </html>
