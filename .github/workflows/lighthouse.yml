@@ -1,0 +1,30 @@
+name: Lighthouse CI
+
+on:
+push:
+branches:
+- main
+workflow_dispatch:
+
+jobs:
+lighthouse:
+name: Audit Website
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+
+  - name: Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
+
+  - name: Install Lighthouse CI
+    run: npm install -g @lhci/cli
+
+  - name: Run Lighthouse CI
+    run: |
+      lhci autorun --collect.url=https://luongtuanmanh2005-svg.github.io/devops-lab1-portfolio/
+```
