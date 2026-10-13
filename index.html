@@ -1,238 +1,239 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Lab 1 — My Portfolio</title>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 30px 15px;
-        color: #333;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 30px 15px;
+            color: #333;
+        }
 
-    .container {
-        background: white;
-        border-radius: 16px;
-        padding: 35px;
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        text-align: center;
-    }
-
-    /* Avatar */
-    .profile {
-        margin-bottom: 25px;
-    }
-
-    .avatar {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #667eea;
-        margin-bottom: 10px;
-    }
-
-    .profile h1 {
-        color: #667eea;
-        margin-bottom: 8px;
-        font-size: 26px;
-    }
-
-    .profile p {
-        margin: 6px 0;
-        color: #666;
-    }
-
-    /* Navigation */
-   /* Thanh điều hướng */
-nav {
-    background: #ffffff;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    margin: 20px 0;
-    border: 1px solid #dddddd;
-}
-
-nav a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 12px;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #667eea;
-    text-decoration: underline;
-}
-
-    /* Headings */
-    .main-title {
-        color: #667eea;
-        margin-bottom: 8px;
-        font-size: 32px;
-    }
-
-    .subtitle {
-        color: #764ba2;
-        margin-bottom: 24px;
-        font-size: 18px;
-        font-weight: normal;
-    }
-
-    /* Information */
-    .info {
-        background: #f8f9fa;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 16px 0;
-        text-align: left;
-    }
-
-    .info p {
-        margin: 10px 0;
-        overflow-wrap: anywhere;
-    }
-
-    .status {
-        color: #25855a;
-        font-weight: bold;
-    }
-
-    /* Technology badges */
-    .badge {
-        display: inline-block;
-        background: #667eea;
-        color: white;
-        padding: 6px 14px;
-        border-radius: 20px;
-        font-size: 14px;
-        margin: 4px;
-    }
-
-    /* Footer */
-    .footer {
-        margin-top: 24px;
-        font-size: 13px;
-        color: #777;
-        line-height: 1.8;
-    }
-
-    /* Mobile */
-    @media (max-width: 480px) {
         .container {
-            padding: 22px 16px;
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Avatar */
+        .profile {
+            margin-bottom: 25px;
         }
 
         .avatar {
-            width: 85px;
-            height: 85px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #667eea;
+            margin-bottom: 10px;
         }
 
         .profile h1 {
-            font-size: 23px;
-        }
-
-        .main-title {
+            color: #667eea;
+            margin-bottom: 8px;
             font-size: 26px;
         }
 
-        nav a {
-            margin: 6px 8px;
+        .profile p {
+            margin: 6px 0;
+            color: #666;
         }
-    }
-</style>
 
+        /* Thanh điều hướng */
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #dddddd;
+        }
+
+        /* Chữ trên thanh điều hướng màu đen */
+        nav a {
+            color: #000000 !important;
+            text-decoration: none;
+            margin: 0 12px;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        nav a:visited {
+            color: #000000;
+        }
+
+        nav a:hover {
+            color: #667eea !important;
+            text-decoration: underline;
+        }
+
+        /* Tiêu đề */
+        .main-title {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #764ba2;
+            margin-bottom: 24px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        /* Thông tin bài Lab */
+        .info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            text-align: left;
+        }
+
+        .info p {
+            margin: 10px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .status {
+            color: #25855a;
+            font-weight: bold;
+        }
+
+        /* Công nghệ */
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 4px;
+        }
+
+        /* Chân trang */
+        .footer {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Giao diện điện thoại */
+        @media (max-width: 480px) {
+            .container {
+                padding: 22px 16px;
+            }
+
+            .avatar {
+                width: 85px;
+                height: 85px;
+            }
+
+            .profile h1 {
+                font-size: 23px;
+            }
+
+            .main-title {
+                font-size: 26px;
+            }
+
+            nav a {
+                margin: 6px 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
 
-    <!-- Profile and Avatar -->
-    <div class="profile">
-        <img
-            src="images/avatar.jpg"
-            alt="Ảnh đại diện của Lương Tuấn Mạnh"
-            class="avatar"
-        >
+        <!-- Ảnh đại diện -->
+        <div class="profile">
+            <img
+                src="images/avatar.jpg"
+                alt="Ảnh đại diện của Lương Tuấn Mạnh"
+                class="avatar"
+            >
 
-        <h1>Lương Tuấn Mạnh</h1>
-        <p>Sinh viên Công nghệ thông tin</p>
-        <p>Chào mừng đến với Portfolio của tôi!</p>
+            <h1>Lương Tuấn Mạnh</h1>
+            <p>Sinh viên Công nghệ thông tin</p>
+            <p>Chào mừng đến với Portfolio của tôi!</p>
+        </div>
+
+        <!-- Thanh điều hướng -->
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+
+        <!-- Nội dung DevOps -->
+        <h1 class="main-title">Hello, DevOps!</h1>
+        <h2 class="subtitle">Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
+
+        <!-- Thông tin bài học -->
+        <div class="info">
+            <p>
+                <strong>Bài học:</strong>
+                DevOps Lab 1 — Tổng quan
+            </p>
+
+            <p>
+                <strong>Deploy bởi:</strong>
+                GitHub Actions CI/CD
+            </p>
+
+            <p>
+                <strong>Ngày deploy:</strong>
+                <span id="date"></span>
+            </p>
+
+            <p>
+                <strong>Pipeline status:</strong>
+                <span class="status">Automated</span>
+            </p>
+        </div>
+
+        <!-- Công nghệ sử dụng -->
+        <div>
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">Git</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">DevOps</span>
+        </div>
+
+        <!-- Chân trang -->
+        <div class="footer">
+            <p>Deployed automatically via GitHub Actions Pipeline</p>
+            <p>Push code → CI Build → Auto Deploy → Live!</p>
+        </div>
+
     </div>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="contact.html">Liên hệ</a>
-    </nav>
-
-    <!-- DevOps Introduction -->
-    <h1 class="main-title">Hello, DevOps!</h1>
-    <h2 class="subtitle">Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
-
-    <!-- Lab Information -->
-    <div class="info">
-        <p>
-            <strong>Bài học:</strong>
-            DevOps Lab 1 — Tổng quan
-        </p>
-
-        <p>
-            <strong>Deploy bởi:</strong>
-            GitHub Actions CI/CD
-        </p>
-
-        <p>
-            <strong>Ngày deploy:</strong>
-            <span id="date"></span>
-        </p>
-
-        <p>
-            <strong>Pipeline status:</strong>
-            <span class="status">Automated</span>
-        </p>
-    </div>
-
-    <!-- Technologies -->
-    <div>
-        <span class="badge">HTML5</span>
-        <span class="badge">CSS3</span>
-        <span class="badge">Git</span>
-        <span class="badge">GitHub Actions</span>
-        <span class="badge">CI/CD</span>
-        <span class="badge">DevOps</span>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>Deployed automatically via GitHub Actions Pipeline</p>
-        <p>Push code → CI Build → Auto Deploy → Live!</p>
-    </div>
-
-</div>
-
-<script>
-    document.getElementById('date').textContent =
-        new Date().toLocaleDateString('vi-VN');
-</script>
-
+    <script>
+        document.getElementById('date').textContent =
+            new Date().toLocaleDateString('vi-VN');
+    </script>
 </body>
 </html>
